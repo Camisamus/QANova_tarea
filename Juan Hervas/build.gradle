@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.testng:testng:7.1.0'
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
+    implementation group: 'javax.mail', name: 'javax.mail-api', version: '1.6.2'
+    implementation group: 'com.itextpdf', name: 'itextpdf', version: '5.5.13'
+    implementation group: 'com.lowagie', name: 'itext', version: '2.1.7'
+    compile group: 'net.coobird', name: 'thumbnailator', version: '0.4.1'
+    implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.23'
+    compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.23'
+    compile 'com.googlecode.json-simple:json-simple:1.1.1'
+    compile group: 'io.appium', name: 'java-client', version: '5.0.4'
+}
+
+
+
+test{
+    useTestNG()
+}
